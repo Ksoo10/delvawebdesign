@@ -128,6 +128,7 @@ ol {
 }
 section {
   padding: var(--space-20) var(--space-4);
+  position: relative;
   @media (width <= 769px) {
     padding: var(--space-12) var(--space-3);
   }
@@ -204,6 +205,11 @@ section {
   justify-content: center;
   align-items: center;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
 /*Flex Classes*/
 
 /*Wrapper Classes*/
@@ -223,19 +229,18 @@ section {
 }
 .wrapper-sm {
   padding: var(--space-2) 0;
-  margin: var(--space-4) 0;
+  margin: var(--space-2) 0;
 }
 
 .wrapper-md {
   padding: var(--space-6) 0;
 }
 
-.wrapper-md-flex 
-{
-   padding: var(--space-6) 0;
-   display: flex;
-   flex-flow: row wrap;
-    
+.wrapper-md-flex {
+  padding: var(--space-6) 0;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--space-6);
 }
 
 .hero-wrapper {
@@ -245,12 +250,11 @@ section {
   h1.hero-title {
     color: var(--color-primary);
   }
-  p.hero-text, a.secondary-btn {
+  p.hero-text,
+  a.secondary-btn {
     color: var(--color-white);
   }
 }
-
-
 
 .dwd-wrapper {
   margin: 0 auto;
@@ -270,7 +274,6 @@ section {
     font-size: var(--fs-small);
   }
 }
-
 
 /*Wrapper Classes*/
 
@@ -357,7 +360,7 @@ ul.dwd-card {
   display: flex;
   flex-direction: column;
   h2.dwb-card-title {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-large);
     font-weight: var(--fw-vbold);
     margin-bottom: var(--space-2);
     color: var(--color-darkest);
@@ -368,12 +371,24 @@ ul.dwd-card {
     font-weight: var(--fw-bold);
     color: var(--color-accent-gold);
   }
+  h3.dwb-pricing {
+    font-size: var(--fs-large);
+    font-weight: var(--fw-bold);
+  }
   li {
     margin-bottom: var(--space-2);
     padding: 0;
     font-size: 14px;
     line-height: 1.2;
     color: var(--color-darkest);
+    list-style-type: "🗸  ";
+  }
+  li::marker {
+    font-size: 16px;
+  }
+  .link-btn {
+    color: var(--color-primary);
+    margin-top: var(--space-1);
   }
 }
 
@@ -389,7 +404,7 @@ ul.dwd-card-feature {
   display: flex;
   flex-direction: column;
   h2.dwb-card-title {
-    font-size: var(--fs-medium);
+    font-size: var(--fs-large);
     font-weight: var(--fw-vbold);
     margin-bottom: var(--space-2);
     color: var(--color-lightest);
@@ -398,7 +413,7 @@ ul.dwd-card-feature {
   h3.dwb-pricing {
     font-size: var(--fs-large);
     font-weight: var(--fw-bold);
-    color: var(--color-light);
+    color: var(--color-lightest);
   }
 
   i {
@@ -411,9 +426,15 @@ ul.dwd-card-feature {
     font-size: 14px;
     line-height: 1.3;
     color: var(--color-white);
+    list-style-type: "🗸  ";
+  }
+
+  li::marker {
+    font-size: 16px;
   }
   .link-btn {
     color: var(--color-white);
+    margin-top: var(--space-1);
   }
 }
 /*Card Classes*/
@@ -487,10 +508,68 @@ details[open] summary {
 .dwd-item {
   margin: 0 auto;
   padding: var(--space-4);
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
 
   p {
-    font-size: 14px;
+    font-size: var(--fs-base);
+    color: var(--color-darkest);
   }
+
+  h3 {
+    color: var(--color-primary);
+  }
+}
+
+.shape-fill {
+  fill: var(--color-primary);
+  padding: 0;
+}
+
+.custom-shape-divider-top-primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-primary svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 96px;
+  @media (width <=769px) {
+    width: calc(105% + 1.3px);
+    height: 40px;
+  }
+}
+
+.custom-shape-divider-top-primary .shape-fill {
+  fill: var(--color-lightest);
+}
+
+.custom-shape-divider-top-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-light svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 96px;
+  @media (width <=769px) {
+    width: calc(105% + 1.3px);
+    height: 40px;
+  }
+}
+
+.custom-shape-divider-top-light .shape-fill {
+  fill: var(--color-white);
 }
