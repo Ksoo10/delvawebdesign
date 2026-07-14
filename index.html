@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="main_file.css" />
     <link
       rel="preload"
-      href="/Fonts/lora-v37-latin/lora-v37-latin-regular.woff2 "
+      href="assets/lora-v37-latin-regular.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/Fonts/poppins-v24-latin/poppins-v24-latin-700.woff2 "
+      href="assets/poppins-v24-latin-700.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -261,7 +261,8 @@
               </svg>
               <h3>Launch</h3>
               <p>
-                We test everything, make sure the site is ready, and get you live with a website that helps your business grow
+                We test everything, make sure the site is ready, and get you
+                live with a website that helps your business grow
               </p>
             </div>
           </div>
@@ -339,9 +340,9 @@
       </section>
       <section id="contact">
         <div class="container-md">
-          <div class="wrapper">
-            <div class="form-wrapper">
-              <h4>Ready to Get the Site Your Business Deserves?</h4>
+          <div class="wrapper-md-flex">
+            <div class="form-text-wrapper">
+              <h4 class="fs-large">Ready to Get the Site Your Business Deserves?</h4>
               <p>
                 Fill out the form below, and we'll get back to you within 24
                 hours.
@@ -354,7 +355,6 @@
               >
                 <div class="text-wrapper">
                   <h3 class="fw-bold tx-primary">Contact Us</h3>
-                  <span></span>
                 </div>
                 <label for="name"> First name</label>
                 <input type="text" id="name" name="name" />
@@ -367,6 +367,19 @@
                 <button class="primary-btn" type="submit">Send Message</button>
               </form>
             </div>
+            <picture class="cs-picture">
+              <source media="(max-width:600px)" srcset="/delvalogo.webp" />
+              <source media="(min-width: 601px)" srcset="/delvamlogo.webp" />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="/delvamlogo.webp"
+                alt="phone in hand"
+                width="600"
+                height="600"
+              />
+            </picture>
           </div>
         </div>
       </section>
