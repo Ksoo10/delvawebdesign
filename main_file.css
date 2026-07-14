@@ -466,17 +466,10 @@ details {
   height: 0;
   overflow: clip;
 }
-
-/* Browser supports interpolate-size */
-@supports (interpolate-size: allow-keywords) {
-  :root {
-    interpolate-size: allow-keywords;
-  }
-
-  [open]::details-content {
+ [open]::details-content {
     height: auto;
   }
-}
+
 
 summary {
   display: flex;
@@ -526,7 +519,7 @@ details[open] summary {
 }
 
 .shape-fill {
-  fill: var(--color-primary);
+  fill: var(--color-darkest);
   padding: 0;
 }
 
