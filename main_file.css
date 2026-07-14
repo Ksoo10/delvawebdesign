@@ -241,6 +241,10 @@ section {
   display: flex;
   flex-flow: row nowrap;
   gap: var(--space-6);
+   @media (width <=769px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero-wrapper {
@@ -526,6 +530,7 @@ details[open] summary {
   padding: 0;
 }
 
+/*Dividers*/
 .custom-shape-divider-top-primary {
   position: absolute;
   top: 0;
@@ -572,4 +577,56 @@ details[open] summary {
 
 .custom-shape-divider-top-light .shape-fill {
   fill: var(--color-white);
+}
+/*Dividers*/
+
+.form-wrapper {
+  background: white;
+  padding: var(--space-4) 0;
+  margin: var(--space-1);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap:var(--space-1);
+  width: 100%;
+  max-width: 500px;
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form > label {
+    font-family: var(--ff-header);
+    color:var(--color-primary);
+    font-weight: 800;
+    margin-top: 0.5rem;
+  }
+  input#name,
+  input#email,
+  textarea#msg,
+  input#phone,
+  select {
+    border: none;
+    border-bottom: 1px solid #cccc;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+    font-size: 0.9rem;
+    opacity: 1; /* Firefox reduces opacity by default */
+  }
+}
+
+input#name,
+input#email,
+textarea#msg:hover {
+  border: 1px solid var(--clr-primary);
+}
+
+.cs-picture > img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 500px;
 }
