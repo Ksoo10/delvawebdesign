@@ -3,7 +3,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("assets/poppins-v24-latin/poppins-v24-latin-700.woff2")
+  src: url("assets/poppins-v24-latin-700.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* lora-regular - latin */
@@ -11,7 +11,7 @@
   font-family: "Lora";
   font-style: normal;
   font-weight: 400;
-  src: url("assets/lora-v37-latin/lora-v37-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("assets/lora-v37-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   --color-primary: hsl(204 30% 51%);
