@@ -431,7 +431,6 @@ ul.dwd-card-feature {
     font-size: 14px;
     line-height: 1.3;
     color: var(--color-white);
-    list-style-type: "🗸  ";
   }
 
   li::marker {
