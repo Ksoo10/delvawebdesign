@@ -440,7 +440,7 @@ ul.dwd-card-feature {
     color: var(--color-light);
   }
   .link-btn {
-    color: var(--color-white);
+    color: var(--color-light);
     margin-top: var(--space-1);
   }
 }
