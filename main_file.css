@@ -356,7 +356,6 @@ ul.dwd-card {
   background-color: var(--color-white);
   border-radius: var(--space-4);
   padding: var(--space-6) var(--space-8);
-  color: var(--color-primary);
   box-shadow: 4.5px 1px 8.5px -6px var(--color-dark);
   max-width: 450px;
   width: 100%;
