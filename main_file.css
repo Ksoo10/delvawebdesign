@@ -370,28 +370,30 @@ ul.dwd-card {
     color: var(--color-darkest);
     padding: 0;
   }
-  span.dwp-pricing {
-    font-size: var(--fs-large);
-    font-weight: var(--fw-bold);
-    color: var(--color-accent-gold);
-  }
   h3.dwb-pricing {
     font-size: var(--fs-large);
     font-weight: var(--fw-bold);
+        color: var(--color-darkest);
   }
+  
+  i {
+    color: var(--color-darkest);
+  }
+
   li {
     margin-bottom: var(--space-2);
     padding: 0;
     font-size: 14px;
     line-height: 1.2;
-    color: var(--color-darkest);
-    list-style-type: "🗸  ";
+    
   }
   li::marker {
     font-size: 16px;
+      content: "🗸  ";
+    color: var(--color-darkest);
   }
   .link-btn {
-    color: var(--color-primary);
+    color: var(--color-darkest);
     margin-top: var(--space-1);
   }
 }
@@ -411,13 +413,13 @@ ul.dwd-card-feature {
     font-size: var(--fs-large);
     font-weight: var(--fw-vbold);
     margin-bottom: var(--space-2);
-    color: var(--color-lightest);
+    color: var(--color-light);
     padding: 0;
   }
   h3.dwb-pricing {
     font-size: var(--fs-large);
     font-weight: var(--fw-bold);
-    color: var(--color-lightest);
+    color: var(--color-light);
   }
 
   i {
@@ -435,6 +437,8 @@ ul.dwd-card-feature {
 
   li::marker {
     font-size: 16px;
+        content: "🗸  ";
+    color: var(--color-light);
   }
   .link-btn {
     color: var(--color-white);
