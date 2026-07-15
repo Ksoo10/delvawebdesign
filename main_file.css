@@ -513,11 +513,10 @@ details[open] summary {
 
   p {
     font-size: var(--fs-base);
-    color: var(--color-darkest);
   }
 
   h3 {
-    color: var(--color-primary);
+    color: var(--color-darkest);
   }
 }
 
