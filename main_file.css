@@ -386,7 +386,7 @@ section {
     line-height: 1.2;
     
   }
-  li::marker {
+  li::before {
     font-size: 16px;
       content: "🗸  ";
     color: var(--color-darkest);
