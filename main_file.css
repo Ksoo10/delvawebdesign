@@ -388,7 +388,7 @@ section {
   }
   li::before {
     font-size: 16px;
- content: "✓\FE0E";
+ content: "✓\FE0E ";
     color: var(--color-darkest);
   }
   .link-btn {
@@ -435,7 +435,7 @@ section {
 
   li::before {
     font-size: 16px;
-content: "✓\FE0E";
+content: "✓\FE0E ";
     color: var(--color-light);
   }
   .link-btn {
