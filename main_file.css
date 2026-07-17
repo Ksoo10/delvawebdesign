@@ -204,6 +204,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .flex {
@@ -390,6 +391,7 @@ section {
     font-size: 16px;
         content: "✓\FE0E ";
     color: var(--color-darkest);
+     margin-right: var(--space-1);
   }
   .link-btn {
     color: var(--color-darkest);
@@ -437,6 +439,7 @@ section {
     font-size: 16px;
     content: "✓\FE0E ";
     color: var(--color-light);
+    margin-right: var(--space-1);
   }
   .link-btn {
     color: var(--color-light);
