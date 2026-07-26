@@ -181,11 +181,10 @@ li.menu-links {
   ul.nav-links {
     display: none;
     overflow: hidden;
-       opacity: 0;
+    opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     pointer-events: none;
-
   }
 
   .nav-links.show {
@@ -194,7 +193,7 @@ li.menu-links {
     gap: 1rem;
     background-color: var(--clr-primary);
     padding: var(--space-6);
-   opacity: 1;
+    opacity: 1;
     visibility: visible;
     transform: translateY(0);
     pointer-events: auto;
@@ -298,7 +297,6 @@ li.menu-links {
   flex-direction: column;
 }
 .wrapper-sm {
-  text-align: center;
   padding: var(--space-2) 0;
   margin: var(--space-2) 0;
 }
@@ -309,8 +307,10 @@ li.menu-links {
 
 .wrapper-md-flex {
   padding: var(--space-6) 0;
+  margin: 0 var(--space-4);
   display: flex;
   flex-flow: row wrap;
+  place-content: center;
   gap: var(--space-6);
   @media (width <=769px) {
     display: flex;
@@ -352,6 +352,10 @@ li.menu-links {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.container-md {
+  padding: var(--space-4 0);
+  margin: 0 var(--space-4);
 }
 
 .container-fluid {
@@ -403,6 +407,10 @@ li.menu-links {
 
 .fs-large {
   font-size: var(--fs-large);
+}
+
+.center {
+  text-align: center;
 }
 
 /*Color Classes*/
@@ -545,7 +553,7 @@ summary {
   color: var(--color-darkest);
   font-family: var(--ff-header);
   font-size: var(--fs-medium);
-  gap: var(--sp-4);
+  gap: var(--space-4);
 
   &::-webkit-details-marker {
     display: none;
@@ -579,6 +587,7 @@ details[open] summary {
 
   h3 {
     color: var(--color-darkest);
+    margin-bottom: var(--space-2);
   }
 }
 
@@ -662,9 +671,8 @@ details[open] summary {
 /*Dividers*/
 
 .form-wrapper {
-  background: white;
-  padding: var(--space-4) 0;
-  margin: var(--space-1);
+  background: var(--color-light);
+  padding: var(--space-4);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
@@ -672,9 +680,15 @@ details[open] summary {
   width: 100%;
   max-width: 500px;
   .form-wrapper {
-    display: flex;
     flex-direction: column;
     width: 100%;
+  }
+
+  .form-text-wrapper {
+    padding: var(--space-4);
+    p {
+      font-size: var(--fs-small);
+    }
   }
 
   form > label {
@@ -689,7 +703,9 @@ details[open] summary {
   input#phone,
   select {
     border: none;
-    border-bottom: 1px solid #cccc;
+    border-bottom: 1px solid var(--color-darkest);
+    background: transparent;
+    margin-bottom: var(--space-2);
   }
 
   input::placeholder,
@@ -697,6 +713,10 @@ details[open] summary {
     color: #999;
     font-size: 0.9rem;
     opacity: 1; /* Firefox reduces opacity by default */
+  }
+
+  .primary-btn {
+    margin-top: var(--space-2);
   }
 }
 
@@ -716,7 +736,7 @@ textarea#msg:hover {
 .site-footer {
   background-color: var(--color-darkest);
   color: var(--color-white);
-  padding: var(--space-12)  var(--space-6);
+  padding: var(--space-12) var(--space-6);
 }
 
 .footer-wrapper {
@@ -771,7 +791,7 @@ textarea#msg:hover {
   color: var(--color-light);
 }
 
-@media (width < 769px) {
+@media (width <= 769px) {
   .footer-wrapper {
     grid-template-columns: 1fr;
     gap: var(--space-6);
