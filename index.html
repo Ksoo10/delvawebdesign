@@ -47,7 +47,7 @@
     </header>
     <main>
       <section id="hero">
-        <div class="container">
+        <div class="container-fluid-flex">
           <div class="hero-wrapper">
             <h1 class="hero-title">Small Business Web Designer</h1>
             <p class="hero-text">
@@ -57,6 +57,93 @@
             <div class="btn-group">
               <a href="#service" class="primary-btn">View Pricing</a>
               <a href="#contact" class="secondary-btn">Get Started</a>
+            </div>
+          </div>
+          <div class="cs-picture">
+                <picture>
+                  <source
+                    media="(max-width: 650px)"
+                    srcset="assets/hero-image.webp"
+                  />
+                  <source
+                    media="(min-width: 649px)"
+                    srcset="assets/heroimagemobile.webp"
+                  />
+                  <img
+                    src="assets/heroimagemobile.webp"
+                    alt="Delva logo"
+                    loading="eager"
+                    decoding="async"
+                    width="600"
+                    height="600"
+                  />
+                </picture>
+          </div>
+        </div>
+      </section>
+      <section id="detail" class="bg-dark">
+        <div class="wave-container">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill d-none"
+            ></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="grid-row">
+            <div class="grid-item">
+              <div class="wrapper-md">
+                <div class="wrapper-sm">
+                  <h2 class="tx-light">
+                    Websites Built for Real-World Service Businesses
+                  </h2>
+                  <p class="tx-white">
+                    We build websites for service-based small businesses across
+                    Delaware that rely on local trust and steady inquiries. That
+                    includes contractors, electricians, plumbers, landscapers,
+                    cleaners, barbers, salons, and other local businesses that
+                    need a dependable Delaware web design presence to help
+                    customers feel confident reaching out.
+                  </p>
+                  <p class="tx-white">
+                    Many small business owners know they need a website, but
+                    they don’t want the process to feel overwhelming. Delva Web
+                    Design keeps small business web design straightforward with
+                    clear communication, practical design, and a process built
+                    around what your business actually needs so you can launch a
+                    clean, professional local business website that supports
+                    your goals and makes life easier.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="wrapper-sm">
+                <picture class="cs-picture">
+                  <source
+                    media="(max-width: 650px)"
+                    srcset="assets/storefront.webp"
+                  />
+                  <source
+                    media="(min-width: 649px)"
+                    srcset="assets/storefrontmobile.webp"
+                  />
+                  <img
+                    src="assets/storefront.webp"
+                    alt="Delva logo"
+                    loading="eager"
+                    decoding="async"
+                    width="600"
+                    height="600"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
@@ -461,5 +548,5 @@
       </footer>
     </main>
   </body>
-  <script defer src="index.js"></script>
+  <script defer src="/index.js"></script>
 </html>
