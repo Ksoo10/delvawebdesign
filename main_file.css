@@ -761,12 +761,18 @@ input#email,
 textarea#msg:hover {
   border: 1px solid var(--clr-primary);
 }
+/*Form Styling*/
 
-.cs-picture > img {
+.cs-picture {
   object-fit: cover;
-  width: 100%;
   height: auto;
+  @media (width <=769px) {
+    width:100%;
+  }
 }
+.border-rad {
+  border-radius: 10px;
+} 
 
 /* Footer */
 .site-footer {
