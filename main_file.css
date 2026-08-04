@@ -193,7 +193,6 @@ li.menu-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--color-primary);
     padding: var(--space-6);
     opacity: 1;
     visibility: visible;
