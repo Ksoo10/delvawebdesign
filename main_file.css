@@ -139,21 +139,8 @@ section {
 nav {
   box-shadow: var(--shadow-md);
   background-color: var(--color-darkest);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-span.logo-title {
-  color: white;
-  font-size: var(--fs-large);
-  font-family: var(--ff-header);
-  margin: 0 var(--space-6);
-  font-weight: var(--fw-bold);
-  @media (width <=769px) {
-    display: none;
-  }
-}
 ul.nav-links {
   display: flex;
   justify-content: center;
@@ -216,7 +203,6 @@ li.menu-links {
 }
 
 /*Nav Menu*/
-
 /*Button Classes*/
 .primary-btn {
   background-color: var(--color-darkest);
