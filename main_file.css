@@ -455,6 +455,7 @@ li.menu-links {
 
 .tx-white {
   color: var(--color-white);
+  fill: var(--color-white);
 }
 
 .tx-light {
